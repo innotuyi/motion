@@ -1,0 +1,18 @@
+.nav-brand {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+}
+.box {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    margin-bottom: 30px;
+}
+
+.bg1 {
+
+    background-color:blue!important;
+}

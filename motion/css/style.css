@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+@font-face{
+    font-family:Gotham Pro;
+    src:url(https://static.schoolofmotion.com/fonts/GothamProRegular.otf);
+    font-weight: 500;
+    font-weight: normal;
+    font-size: 32px;
+}
+h2{
+    font-family:Gotham Pro,Arial;
+    font-size:1.75rem;
+    font-weight:700;
+    line-height:2rem;
+    letter-spacing:0.15em
+}
+h1 {
+    text-transform: capitalize;
+}
+
+
+.navbar-brand {
+    font-family: "Gotham Pro" , Arial;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.custom-nav .custom-nav-item  a {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: normal;
+
+}
+.nav-padding {
+     padding-left: 3rem;
+}
+.custom-nav-item:hover {
+   
+    border-bottom: solid #cd3445 4px ;
+    border-radius: 1px;
+    
+}
+.vid-parent {
+    position: relative;
+}
+.remove-vid-margin {
+    margin: 0px;
+    padding: 0px;
+}
+video {
+    width: 100%;
+    height: 30%;
+}
+.vid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #404db2 ;
+    z-index:1;
+    opacity: 0.8;
+}
+.vid-content {
+    position:absolute;
+    left:15%;
+    right:15%;
+    top: 30%;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    
+    border-radius: 1%;
+    
+}
+
+.banner1{
+
+    background: #ffcd42;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 2rem;
+}
+.play {
+
+   
+    position: relative;
+    top: -50%;
+    cursor: pointer;
+    transition: 0.5s;
+
+   
+ }
+ .modal-content {
+    background: transparent !important;
+    border: none !important;
+}
+
+
+.bottom-banner {
+    color: #fff;
+    padding: 10px;
+}
+.float-right {
+    float:right;
+}
+
+.border-bottom{
+
+    border-bottom:2px solid #fff !important;
+}
+.stripe {
+    background-image: linear-gradient(240deg, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    padding: 3rem;
+    height: 13rem;
+    margin: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+/* ----------------------mobile version  start----------------------------------- */
+@media screen and (min-width:0px) and (max-width:700px) {
+    .my-content,.txt-banner , .stripe{
+        display: none;
+    }
+    .vid-content {
+        top: 15%;
+        left: 35%;
+    }
+    .custom-nav .custom-nav-item  a {
+      padding: 10px 20px;
+      background-color: #225470;
+    }
+}
+@media screeen and (max-width:1024px) {
+
+    .vid-content {
+        top: 15%;
+        left: 35%;
+    }
+    .custom-nav .custom-nav-item  a {
+      padding: 10px 20px;
+      background-color: #225470;
+    }
+}
+
+
+@media screen and  (max-width:320px) {
+
+    .vid-parent {
+        position: relative;
+    }
+    .remove-vid-margin {
+        margin: 0px;
+        padding: 0px;
+        height: 200%;
+    }
+    video {
+        width: 160%;
+        height: 30%;
+    }
+
+   
+    .vid-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 160%;
+        background: #404db2 ;
+        z-index:1;
+        opacity: 0.8;
+        padding: 5rem;
+    }
+    .vid-content {
+        position:absolute;
+        left:5%;
+        right:5%;
+        top: 8%;
+        text-align: center;
+        z-index: 2;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 1%;
+      
+        
+    }
+    .show {
+        margin-top: -30px;
+    }
+    .nav-padding {
+        padding-top: 1rem;
+   }
+
+  
+
+    
+    .banner1{
+    
+        background: #ffcd42;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: #fff;
+        line-height: 2rem;
+        margin-top: 3rem;
+        
+    }
+
+
+} 
+
+
+
+
+
+/* --------------------mobile version end---------------------- */
